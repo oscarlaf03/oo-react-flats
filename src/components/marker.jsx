@@ -4,8 +4,7 @@ class Marker extends Component {
     constructor(props){
         super(props);
         this.state = {
-            // lat: 59.955413,
-            // lng: 30.337844
+
         }
     }
 

@@ -12,7 +12,10 @@ class FlatList extends Component {
                 
                 { flats.map(flat => {
                     return  <Flat name={flat.name} price={flat.price} 
-                    currency={flat.priceCurrency} key={flat.name} src={flat.imageUrl}/>
+                    currency={flat.priceCurrency} key={flat.name}
+                    lat={flat.lat} lng={flat.lng} src={flat.imageUrl}
+                    select={this.props.select}
+                    />
                 })}
                   
             </div>

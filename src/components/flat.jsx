@@ -7,11 +7,14 @@ class Flat extends Component {
 
         }
     }
+    handleClick = () => {
+        this.props.select(this.props.lat, this.props.lng);
+    }
 
     render () {
         
         return(
-            <div className="card" style={ {backgroundImage: `url(${this.props.src})`} } >
+            <div onClick={this.handleClick} className="card" style={ {backgroundImage: `url(${this.props.src})`} } >
                 <div className="card-category">{this.props.price} {this.props.currency}</div>
                 <div className="card-description">
                     <h2>{this.name}</h2>
